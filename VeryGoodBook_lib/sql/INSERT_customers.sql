@@ -1,0 +1,1 @@
+INSERT INTO customers (id, email, phone, password, name, gender, birthday, address, subscribed, discount) VALUES(?,?,?,?,?,?,?, ?,?,0);

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>鋼彈模型店</title>
+		<link rel="stylesheet" href="./css/gfs_main.css">
+		<style type="text/css">
+			#memberForm{
+			border: lightgray solid 1px;
+			min-height: 50vh;
+			width: 30%;
+			min-width: 230px;
+			}
+			#memberForm label{
+			min-width: 3em;
+			display: inline-block;
+			}
+		</style>
+		<script type="text/javascript">
+			function showPassword(){
+				//window.alert(displayPwdCheckBox.checked); //alert(boolean);
+				password.type=(displayPwdCheckBox.checked ? "text" : "password"); //顯示密碼
+			}
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h2><a href="./">鋼彈模型店</a><sub>會員登入</sub></h2>
+			<hr>
+		</header>
+		<nav>
+			<a href="./product_list.html">去逛逛</a> |
+			<a href="./login.html">會員登入</a> |
+			<a href="./register.html">會員註冊</a> |
+			<hr>
+		</nav>
+		<article>
+			<div class="login">
+				<form id="memberForm" action="/#" method="GET">
+				<p>
+					<label>帳號：</label><input type="text" name="id" placeholder="請輸入id/email/手機號碼" required>
+				</p>
+				<p>
+					<label>密碼：</label><input type="password" id="password" name="password" placeholder="請輸入密碼(注意大小寫)" required>
+					<input type="checkbox" id="displayPwdCheckBox" onchange="showPassword()"><label>顯示密碼</label>
+				</p>
+				<p>
+					<label>驗證碼：</label><input type="text" name="captcha" placeholder="請依下圖輸入驗證碼" required>
+				</p>
+				<p>
+					<img src="./images/captcha_login.png">
+					<input type="button" value="更新驗證碼">
+				</p>
+					<input type="submit" value="登入">
+				</form>
+			</div>
+		</article>
+		<footer>
+			<hr>
+			鋼彈模型店&copy;版權所有 2024/12~
+		</footer>
+	</body>
+
+</html>
